@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(to bottom right, 
+    rgba(255, 255, 255, 1) 0%,   
+    rgba(245, 245, 235, 0.9) 15%,  
+    rgba(235, 235, 225, 0.8) 30%,  
+    rgba(225, 225, 215, 0.7) 45%, 
+    rgba(215, 215, 205, 0.6) 60%, 
+    rgba(205, 205, 195, 0.5) 75%, 
+    rgba(195, 195, 185, 0.4) 85%, 
+    rgba(185, 185, 175, 0.3) 95%, 
+    rgba(175, 175, 165, 0.2) 100%
+);
+
+
+  font-size: 1.2rem;
+  color: #77B9F2;
+}
+
+header {
+  padding: 1rem 4rem;
+  width: 100%;
+  min-height: 10vh;
+  background: linear-gradient(to top right, 
+    rgba(255, 255, 255, 1) 0%,   
+    rgba(245, 245, 235, 0.9) 15%,  
+    rgba(235, 235, 225, 0.8) 30%,  
+    rgba(225, 225, 215, 0.7) 45%, 
+    rgba(215, 215, 205, 0.6) 60%, 
+    rgba(205, 205, 195, 0.5) 75%, 
+    rgba(195, 195, 185, 0.4) 85%, 
+    rgba(185, 185, 175, 0.3) 95%, 
+    rgba(175, 175, 165, 0.2) 100%
+);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #77B9F2;
+  -webkit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing: grayscale;
+    --font-smoothing: antialiased;
+}
+
+header .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input label {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 253, 253, 0.689);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input label i {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.image {
+  width: 48rem;
+  height: 25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid rgba(255, 253, 253, 0.689);
+  border-radius: 0.5rem;
+  
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.image:hover {
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.13);
+}
+
+.image img {
+  width: calc(100% + 1rem);
+  height: calc(100% + 0.5rem);
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.image h2 {
+  font-weight: 100;
+}
